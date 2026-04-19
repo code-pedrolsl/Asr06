@@ -1,0 +1,9 @@
+module Demo
+{
+    interface Printer
+    {
+        string printString(string s);
+        string reverseString(string s);
+        bool isPalindrome(string s);
+    }
+}
