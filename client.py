@@ -3,7 +3,7 @@ import Demo
 
 communicator = Ice.initialize(sys.argv)
 
-base = communicator.stringToProxy("SimplePrinter:tcp -h localhost -p 5678")
+base = communicator.stringToProxy("SimplePrinter:tcp -h 3.239.175.168 -p 5678")
 printer = Demo.PrinterPrx.checkedCast(base)
 if not printer:
     raise RuntimeError("Invalid proxy")
